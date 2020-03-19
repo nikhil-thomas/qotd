@@ -16,7 +16,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	quotes[4] = "Live your dreams. -- Les Brown"
 	quotes[5] = "Doo be doo be dooo. -- Frank Sinatra"
 
-	fmt.Fprintf(w, quotes[rand.Intn(6)])
+	fmt.Fprintf(w, "v2"+quotes[rand.Intn(6)])
 }
 
 func handleRequests() {
